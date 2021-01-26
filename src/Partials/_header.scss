@@ -1,0 +1,48 @@
+header{
+    width: 100%;
+    nav{
+        @include flex;
+        width: 80%;
+        height: 80px;
+        margin: auto;
+        border-bottom: 1px solid black;
+        justify-content: space-around;
+        align-items: center;
+        .logo{
+            width: 50%;
+            @include cursor-pointer;
+        }
+        .link{
+            width: 50%;
+            @include flex;
+            justify-content: flex-end;
+            align-items: center;
+            ul{
+                @include flex;
+                @include style-none;
+                li{
+                    margin-right: 20px;
+                    @include cursor-pointer;
+
+                }
+            }
+            button{
+                @include flex;
+                border: 1px solid blue;
+                border-radius: 5px;
+                background-color: white;
+                align-items: center;
+                padding: 5px;
+                @include cursor-pointer;
+                img{
+                    width: 20px;
+                }
+                p{
+                    color: blue;
+                    font-size: 1.2em;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

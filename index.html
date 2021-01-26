@@ -3,13 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/css/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 <body>
-    
-    
+    <div id="app">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img :src="nav_bar.img" alt="logo_timbit">
+                </div>
+                <div class="link">
+                    <ul>
+                        <li v-for="link in nav_bar.link">{{link}}</li>
+                    </ul>
+                    <button>
+                        <img :src="nav_bar.button.img" alt="">
+                        <p>{{nav_bar.button.text}}</p>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- <section id="section1">
+                <div class="container">
+                    <div class="text">
 
+                    </div>
+                    <div class="jumbotron">
+                        <img :src="" alt="">
+                    </div>
+                </div>
+            </section> -->
+        </main>
+        <footer>
+    
+        </footer>
+        
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="dist/js/app.js"></script>
 </body>
 </html>
