@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  color: #58402C;
+}
+
 header {
   width: 100%;
 }
@@ -51,6 +55,12 @@ header nav .link button p {
   font-size: 1.2em;
   margin-left: 5px;
 }
+header nav .hamburger-menu {
+  width: 50%;
+  justify-content: flex-end;
+  align-items: center;
+  display: none;
+}
 
 #section1 {
   width: 100%;
@@ -86,7 +96,7 @@ header nav .link button p {
   border-style: none;
   border-radius: 5px;
   align-items: center;
-  background-color: blue;
+  background-color: #2C4792;
   padding: 5px;
 }
 #section1 .container .text div button img {
@@ -100,6 +110,7 @@ header nav .link button p {
   padding: 0 2%;
 }
 #section1 .container .text > p {
+  font-size: 2em;
   padding-top: 5%;
 }
 #section1 .container .jumbotron {
@@ -108,4 +119,54 @@ header nav .link button p {
 #section1 .container .jumbotron img {
   padding-top: 10%;
   width: 100%;
+}
+
+@media (max-width: 550px) {
+  header nav {
+    width: 100%;
+    padding: 0 5%;
+  }
+  header nav .link {
+    display: none;
+  }
+  header nav .hamburger-menu {
+    display: flex;
+  }
+  header nav .hamburger-menu i {
+    color: black;
+    font-size: 30px;
+  }
+  header nav .hamburger-menu i:active {
+    color: #2C4792;
+  }
+
+  #section1 .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #section1 .container .text {
+    width: 100%;
+  }
+  #section1 .container .text h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+  #section1 .container .text h3 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  #section1 .container .text div {
+    font-size: 1.5em;
+    justify-content: center;
+  }
+  #section1 .container .text div button p {
+    font-size: 1.5em;
+  }
+  #section1 .container .text > p {
+    font-size: 1em;
+    text-align: center;
+  }
+  #section1 .container .jumbotron {
+    width: 100%;
+  }
 }
