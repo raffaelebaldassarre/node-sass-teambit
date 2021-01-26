@@ -51,3 +51,61 @@ header nav .link button p {
   font-size: 1.2em;
   margin-left: 5px;
 }
+
+#section1 {
+  width: 100%;
+}
+#section1 .container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+#section1 .container .text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+#section1 .container .text h1 {
+  padding-top: 13%;
+  font-size: 5em;
+  line-height: 1.5em;
+}
+#section1 .container .text h3 {
+  font-size: 2.2em;
+  line-height: 1.5em;
+}
+#section1 .container .text div {
+  display: flex;
+  align-items: center;
+  font-size: 2.5em;
+  padding-top: 10%;
+}
+#section1 .container .text div button {
+  display: flex;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 5px;
+  align-items: center;
+  background-color: blue;
+  padding: 5px;
+}
+#section1 .container .text div button img {
+  height: 25px;
+}
+#section1 .container .text div button p {
+  font-size: 2.5em;
+  color: white;
+}
+#section1 .container .text div span {
+  padding: 0 2%;
+}
+#section1 .container .text > p {
+  padding-top: 5%;
+}
+#section1 .container .jumbotron {
+  width: 50%;
+}
+#section1 .container .jumbotron img {
+  padding-top: 10%;
+  width: 100%;
+}

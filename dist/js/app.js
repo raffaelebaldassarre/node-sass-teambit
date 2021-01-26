@@ -19,7 +19,20 @@ var app = new Vue({
       }
     },
     section1: {
-      text: {}
+      text: {
+        h1: "Understand, recognize and develop your people",
+        h3: "Teambit helps teams create a high performing culture with regular feedback",
+        button1: {
+          img: "./dist/img/google-logo.svg",
+          text: "Sign up with Google"
+        },
+        button2: {
+          img: "./dist/img/slack-logo.svg",
+          text: "Sign up with Slack"
+        },
+        p: "or use your email address <i class='fas fa-arrow-right'></i>"
+      },
+      jumbotron: "./dist/img/illustration-main.jpg"
     }
   }
 });

@@ -26,16 +26,29 @@
             </nav>
         </header>
         <main>
-            <!-- <section id="section1">
+            <section id="section1">
                 <div class="container">
                     <div class="text">
-
+                        <h1>{{section1.text.h1}}</h1>
+                        <h3>{{section1.text.h3}}</h3>
+                        <div>
+                            <button>
+                                <img :src="section1.text.button1.img" alt="">
+                                <p>{{section1.text.button1.text}}</p>
+                            </button>
+                            <span>or</span>
+                            <button>
+                                <img :src="section1.text.button2.img" alt="">
+                                <p>{{section1.text.button2.text}}</p>
+                            </button>
+                        </div>
+                        <p v-html="section1.text.p"></p>
                     </div>
                     <div class="jumbotron">
-                        <img :src="" alt="">
+                        <img :src="section1.jumbotron" alt="">
                     </div>
                 </div>
-            </section> -->
+            </section>
         </main>
         <footer>
     

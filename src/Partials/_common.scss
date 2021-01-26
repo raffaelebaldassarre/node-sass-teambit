@@ -15,3 +15,13 @@
 @mixin cursor-pointer {
     cursor: pointer;
 }
+
+@mixin button-header {
+    @include flex;
+    @include cursor-pointer;
+    border-style: none;
+    border-radius: 5px;
+    align-items: center;
+    background-color: $buttonblue;
+    padding: 5px;
+}
