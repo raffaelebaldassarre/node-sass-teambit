@@ -86,7 +86,7 @@ header nav .link ul li {
 }
 header nav .link button {
   display: flex;
-  border: 1px solid blue;
+  border: 1px solid #2C4792;
   border-radius: 5px;
   background-color: white;
   align-items: center;
@@ -129,7 +129,7 @@ header nav .hamburger-menu {
   border-style: none;
   border-radius: 5px;
   align-items: center;
-  background-color: #2C4792;
+  background-color: #922C2C;
   padding: 5px;
 }
 #section1 .container .text div button img {
@@ -155,7 +155,7 @@ header nav .hamburger-menu {
 #section2 {
   margin-top: 13%;
   padding-bottom: 5%;
-  background-color: #FFE7D2;
+  background-color: #93C7D0;
 }
 #section2 .container {
   display: flex;
@@ -282,7 +282,7 @@ header nav .hamburger-menu {
 }
 
 #section4 {
-  background-color: #FFE7D2;
+  background-color: #93C7D0;
   display: flex;
   justify-content: center;
 }
@@ -331,7 +331,7 @@ header nav .hamburger-menu {
   border-style: none;
   border-radius: 5px;
   align-items: center;
-  background-color: #2C4792;
+  background-color: #922C2C;
   padding: 5px;
 }
 #section4 .container_70 .button button img {
