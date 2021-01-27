@@ -8,6 +8,33 @@ body {
   color: #58402C;
 }
 
+h1 {
+  font-size: 5em;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 2.2em;
+  line-height: 1.5em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+section {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
 header {
   width: 100%;
 }
@@ -62,14 +89,6 @@ header nav .hamburger-menu {
   display: none;
 }
 
-#section1 {
-  width: 100%;
-}
-#section1 .container {
-  display: flex;
-  width: 80%;
-  margin: auto;
-}
 #section1 .container .text {
   display: flex;
   flex-direction: column;
@@ -77,11 +96,6 @@ header nav .hamburger-menu {
 }
 #section1 .container .text h1 {
   padding-top: 13%;
-  font-size: 5em;
-  line-height: 1.5em;
-}
-#section1 .container .text h3 {
-  font-size: 2.2em;
   line-height: 1.5em;
 }
 #section1 .container .text div {
@@ -102,15 +116,13 @@ header nav .hamburger-menu {
 #section1 .container .text div button img {
   height: 25px;
 }
-#section1 .container .text div button p {
-  font-size: 2.5em;
+#section1 .container .text div button h3 {
   color: white;
 }
 #section1 .container .text div span {
   padding: 0 2%;
 }
 #section1 .container .text > p {
-  font-size: 2em;
   padding-top: 5%;
 }
 #section1 .container .jumbotron {
@@ -121,7 +133,80 @@ header nav .hamburger-menu {
   width: 100%;
 }
 
+#section2 {
+  margin-top: 13%;
+  background-color: #FFE7D2;
+}
+#section2 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+#section2 .container .text {
+  display: flex;
+  padding-top: 8%;
+  justify-content: center;
+}
+#section2 .container .text h4 {
+  width: 60%;
+  text-align: center;
+  margin-bottom: 10%;
+}
+#section2 .container .images-3 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-bottom: 10%;
+}
+#section2 .container .images-3 .image3-1,
+#section2 .container .images-3 .image3-2,
+#section2 .container .images-3 .image3-3 {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#section2 .container .images-3 .image3-1 img,
+#section2 .container .images-3 .image3-2 img,
+#section2 .container .images-3 .image3-3 img {
+  max-height: 200px;
+  margin-bottom: 10%;
+}
+#section2 .container .image-1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#section2 .container .image-1 img {
+  margin-bottom: 10%;
+}
+#section2 .container._2 {
+  border-bottom: none;
+}
+#section2 .container._2 .image-1 {
+  border-bottom: none;
+}
+
 @media (max-width: 550px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
   header nav {
     width: 100%;
     padding: 0 5%;
@@ -148,25 +233,53 @@ header nav .hamburger-menu {
     width: 100%;
   }
   #section1 .container .text h1 {
-    font-size: 3em;
     text-align: center;
   }
-  #section1 .container .text h3 {
-    font-size: 1.5em;
+  #section1 .container .text h4 {
     text-align: center;
   }
   #section1 .container .text div {
     font-size: 1.5em;
     justify-content: center;
   }
-  #section1 .container .text div button p {
-    font-size: 1.5em;
-  }
   #section1 .container .text > p {
-    font-size: 1em;
     text-align: center;
   }
   #section1 .container .jumbotron {
     width: 100%;
+  }
+
+  #section2 .container {
+    padding-bottom: 20%;
+  }
+  #section2 .container .images-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  #section2 .container .images-3 .image3-1,
+#section2 .container .images-3 .image3-2,
+#section2 .container .images-3 .image3-3 {
+    width: 100%;
+  }
+  #section2 .container .images-3 .image3-1 img,
+#section2 .container .images-3 .image3-2 img,
+#section2 .container .images-3 .image3-3 img {
+    max-height: 120px;
+  }
+  #section2 .container .images-3 .image3-1 p,
+#section2 .container .images-3 .image3-2 p,
+#section2 .container .images-3 .image3-3 p {
+    margin-bottom: 20%;
+  }
+  #section2 .container .image-1 img {
+    width: 100%;
+  }
+  #section2 .container._2 {
+    padding-top: 20%;
+  }
+  #section2 .container._2 .image-1 img {
+    margin-bottom: 40%;
   }
 }

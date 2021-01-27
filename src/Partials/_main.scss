@@ -1,20 +1,11 @@
 #section1{
-    width: 100%;
     .container{
-        @include flex;
-        width: 80%;
-        margin: auto;
         .text{
             @include flex;
             flex-direction: column;
             width: 50%;
             h1{
                 padding-top: 13%;
-                font-size: 5em;
-                line-height: 1.5em;
-            }
-            h3{
-                font-size: 2.2em;
                 line-height: 1.5em;
             }
             div{
@@ -27,8 +18,7 @@
                     img{
                         height: 25px;
                     }
-                    p{
-                        font-size: 2.5em;
+                    h3{
                         color: white;
                     }
                 }
@@ -37,7 +27,6 @@
                 }
             }
             >p{
-                font-size: 2em;
                 padding-top: 5%;
             }
         }
@@ -47,6 +36,59 @@
                 padding-top: 10%;
                 width: 100%;
             }
+        }
+    }
+}
+#section2{
+    margin-top: 13%;
+    background-color: $background-color;
+    .container{
+        @include column;
+        align-items: center;
+        border-bottom: 1px solid black;
+        .text{
+            @include flex;
+            padding-top: 8%;
+            justify-content: center;
+            h4{
+                width: 60%;
+                text-align: center;
+                margin-bottom: 10%;
+            }
+        }
+        .images-3{
+            @include flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: baseline;
+            margin-bottom: 10%;
+            .image3-1,
+            .image3-2,
+            .image3-3{
+                @include container_33;
+                @include column;
+                align-items: center;
+                text-align: center;
+                img{
+                    max-height: 200px;
+                    margin-bottom: 10%;
+                }
+            }
+        }
+
+        .image-1{
+            @include flex;
+            justify-content: center;
+            @include container_100;
+            img{
+                margin-bottom: 10%;
+            }
+        }
+    }
+    .container._2{
+        border-bottom: none;
+        .image-1{
+            border-bottom: none;
         }
     }
 }

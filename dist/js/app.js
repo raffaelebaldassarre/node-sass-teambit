@@ -21,7 +21,7 @@ var app = new Vue({
     section1: {
       text: {
         h1: "Understand, recognize and develop your people",
-        h3: "Teambit helps teams create a high performing culture with regular feedback",
+        h4: "Teambit helps teams create a high performing culture with regular feedback",
         button1: {
           img: "./dist/img/google-logo.svg",
           text: "Sign up with Google"
@@ -33,6 +33,47 @@ var app = new Vue({
         p: "or use your email address <i class='fas fa-arrow-right'></i>"
       },
       jumbotron: "./dist/img/illustration-main.jpg"
+    },
+    section2_1: {
+      text: "Traditional people processes lead to disengagement and turnover.",
+      images3: {
+        1: {
+          img: "./dist/img/hardcore.png",
+          text: "They hardcore, formal and disconetted"
+        },
+        2: {
+          img: "./dist/img/nofeedback.png",
+          text: "They don't encourage regular feedback"
+        },
+        3: {
+          img: "./dist/img/notsafe.png",
+          text: "They don't make it safe to speak up"
+        }
+      },
+      image1: {
+        img: "./dist/img/before.png"
+      }
+    },
+    section2_2: {
+      text: "It doesn't to be like that. Teambit is a modern soution that teammates love",
+      images3: {
+        1: {
+          img: "./dist/img/lightweight.png",
+          text: "It's lightwigth fun and interconnnetted"
+        },
+        2: {
+          img: "./dist/img/feedbacksuggestions.png",
+          text: "If encourages regular feedback with contextual requests"
+        },
+        3: {
+          img: "./dist/img/safe.png",
+          text: "It create a safe environment to dialog"
+        }
+      },
+      image1: {
+        img: "./dist/img/after.png",
+        h4: "Here is how it works"
+      }
     }
   }
 });

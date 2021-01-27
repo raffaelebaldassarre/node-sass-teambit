@@ -1,6 +1,23 @@
 // Le media query fino a 550px per i dispositivi mobili,
 // tra 550 e 998 per tablet e oltre 998 per desktop.
 @media (max-width:550px) {
+    h1{
+        font-size: 3em;
+    }
+    
+    h3{
+        font-size: 1.6em;
+    }
+
+    h4{
+        font-size: 1.5em;
+    }
+    
+    p{
+        font-size: 1em;
+    }
+
+
     header{
         nav{
             width: 100%;
@@ -27,29 +44,55 @@
             .text{
                 width: 100%;
                 h1{
-                    font-size: 3em;
                     text-align: center;
                 }
-                h3{
-                    font-size: 1.5em;
+                h4{
                     text-align: center;
                 }
                 div{
                     font-size: 1.5em;
                     justify-content: center;
-                    button{
-                        p{
-                            font-size: 1.5em;
-                        }
-                    }
                 }
                 >p{
-                    font-size: 1em;
                     text-align: center;
                 }
             }
             .jumbotron{
                 width: 100%;
+            }
+        }
+    }
+    #section2{
+        .container{
+            padding-bottom: 20%;
+            .images-3{
+                @include column;
+                align-items: center;
+                margin-bottom: 0;
+                .image3-1,
+                .image3-2,
+                .image3-3{
+                    @include container_100;
+                    img{
+                        max-height: 120px;
+                    }
+                    p{
+                        margin-bottom: 20%;
+                    }
+                }
+            }
+            .image-1{
+                img{
+                    @include container_100;
+                }
+            }
+        }
+        .container._2{
+            padding-top: 20%;
+            .image-1{
+                img{
+                    margin-bottom: 40%;
+                }
             }
         }
     }

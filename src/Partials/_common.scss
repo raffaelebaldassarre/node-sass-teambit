@@ -8,8 +8,48 @@ body{
     color: $colorText;
 }
 
+h1{
+    font-size: 5em;
+}
+
+h3{
+    font-size: 2.5em;
+}
+
+h4{
+    font-size: 2.2em;
+    line-height: 1.5em;
+}
+
+p{
+    font-size: 1.5em;
+}
+
 @mixin flex {
     display: flex;
+}
+
+@mixin column {
+    @include flex;
+    flex-direction: column;
+}
+
+section{
+    width: 100%;
+}
+
+.container{
+    @include flex;
+    width: 80%;
+    margin: auto;
+}
+
+@mixin container_100{
+    width: 100%;
+}
+
+@mixin container_33{
+    width: 33%;
 }
 
 @mixin style-none {

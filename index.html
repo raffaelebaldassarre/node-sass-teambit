@@ -35,16 +35,16 @@
                 <div class="container">
                     <div class="text">
                         <h1>{{section1.text.h1}}</h1>
-                        <h3>{{section1.text.h3}}</h3>
+                        <h4>{{section1.text.h4}}</h4>
                         <div>
                             <button>
                                 <img :src="section1.text.button1.img" alt="">
-                                <p>{{section1.text.button1.text}}</p>
+                                <h3>{{section1.text.button1.text}}</h3>
                             </button>
                             <span>or</span>
                             <button>
                                 <img :src="section1.text.button2.img" alt="">
-                                <p>{{section1.text.button2.text}}</p>
+                                <h3>{{section1.text.button2.text}}</h3>
                             </button>
                         </div>
                         <p v-html="section1.text.p"></p>
@@ -52,6 +52,37 @@
                     <div class="jumbotron">
                         <img :src="section1.jumbotron" alt="">
                     </div>
+                </div>
+            </section>
+            <section id="section2">
+                <div class="container _1">
+                    <div class="text">
+                        <h4>{{section2_1.text}}</h4>
+                    </div>
+                    <div class="images-3">
+                        <div v-for="(item,index) in section2_1.images3" :class= "`image3-${index}`">
+                            <img :src="item.img" alt="">
+                            <p>{{item.text}}</p>
+                        </div>
+                    </div>
+                    <div class="image-1">
+                        <img :src="section2_1.image1.img" alt="">
+                    </div>
+                </div>
+                <div class="container _2">
+                    <div class="text">
+                        <h4>{{section2_2.text}}</h4>
+                    </div>
+                    <div class="images-3">
+                        <div v-for="(item,index) in section2_2.images3" :class= "`image3-${index}`">
+                            <img :src="item.img" alt="">
+                            <p>{{item.text}}</p>
+                        </div>
+                    </div>
+                    <div class="image-1">
+                        <img :src="section2_2.image1.img" alt="">
+                    </div>
+                    <h4>{{section2_2.image1.h4}}</h4>
                 </div>
             </section>
         </main>
