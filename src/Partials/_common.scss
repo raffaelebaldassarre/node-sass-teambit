@@ -34,8 +34,16 @@ p{
     flex-direction: column;
 }
 
-section{
+@mixin container_100{
     width: 100%;
+}
+
+@mixin container_50{
+    width: 50%;
+}
+
+@mixin container_33{
+    width: 33%;
 }
 
 .container{
@@ -44,12 +52,9 @@ section{
     margin: auto;
 }
 
-@mixin container_100{
-    width: 100%;
-}
-
-@mixin container_33{
-    width: 33%;
+.container_all{
+    @include column;
+    @include container_100;
 }
 
 @mixin style-none {

@@ -70,6 +70,42 @@ let app = new Vue ({
                 img : "./dist/img/after.png",
                 h4 : "Here is how it works"
             }
-        }
+        },
+        section3_1 : {
+            img : "./dist/img/employee-feedback.jpg",
+            text : {
+                h4: "Feedback to help teammates improve",
+                p: "Empower your teammates to know in real time what they are doing well and what they need to improve.",
+                link : "<a href='#'></i>Learn More <i class='fas fa-arrow-right'</a>",
+                img : "./dist/img/communication.jpg"
+            }
+        },
+        section3_2 : {
+            img : "./dist/img/employee-survey.jpg",
+            text : {
+                h4: "Survey to help the team be better",
+                p: "Empower your teammates to know in real time what they are doing well and what they need to improve.",
+                link : "<a href='#'></i>Learn More <i class='fas fa-arrow-right'</a>",
+                img : "./dist/img/insights.jpg"
+            }
+        },
+        section3_3 : {
+            img : "./dist/img/performance-review.jpg",
+            text : {
+                h4: "Reviews to help teammates get a fair evaluation",
+                p: "Empower your teammates to know in real time what they are doing well and what they need to improve.",
+                link : "<a href='#'></i>Learn More <i class='fas fa-arrow-right'</a>",
+                img : "./dist/img/review.jpg"
+            }
+        },
+        section3_4 : {
+            img : "./dist/img/employee-survey.jpg",
+            text : {
+                h4: "Praise to help teammates feel valued",
+                p: "Empower your teammates to know in real time what they are doing well and what they need to improve.",
+                link : "<a href='#'></i>Learn More <i class='fas fa-arrow-right'</a>",
+                img : "./dist/img/recognition.jpg"
+            }
+        },
     },
 });

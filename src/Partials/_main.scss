@@ -41,6 +41,7 @@
 }
 #section2{
     margin-top: 13%;
+    padding-bottom: 5%;
     background-color: $background-color;
     .container{
         @include column;
@@ -90,5 +91,49 @@
         .image-1{
             border-bottom: none;
         }
+    }
+}
+#section3{
+    .container_all{
+        padding: 5%;
+        .section3_1,
+        .section3_2,
+        .section3_3,
+        .section3_4{
+            @include container_100;
+            @include flex;
+            margin-bottom: 5%;
+            .img{
+                @include container_50;
+                img{
+                    @include container_100;
+                }
+            }
+            .text{
+                @include container_50;
+                @include flex;
+                div{
+                    width: 40%;
+                    h4{
+                        margin: 5% 0 35%;
+                    }
+                    p{
+                        line-height: 1.5;
+                        margin-bottom: 25%;
+                    }
+                    a{
+                        font-size: 1.2em;
+                        text-decoration-line: none;
+                    }
+                    img{
+                        margin-top: 15%;
+                        max-height: 350px;
+                    }
+                }
+            }
+            .right{
+                justify-content: flex-end;
+            }
+         }
     }
 }

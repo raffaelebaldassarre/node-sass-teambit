@@ -25,14 +25,16 @@ p {
   font-size: 1.5em;
 }
 
-section {
-  width: 100%;
-}
-
 .container {
   display: flex;
   width: 80%;
   margin: auto;
+}
+
+.container_all {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 header {
@@ -135,6 +137,7 @@ header nav .hamburger-menu {
 
 #section2 {
   margin-top: 13%;
+  padding-bottom: 5%;
   background-color: #FFE7D2;
 }
 #section2 .container {
@@ -188,6 +191,77 @@ header nav .hamburger-menu {
 }
 #section2 .container._2 .image-1 {
   border-bottom: none;
+}
+
+#section3 .container_all {
+  padding: 5%;
+}
+#section3 .container_all .section3_1,
+#section3 .container_all .section3_2,
+#section3 .container_all .section3_3,
+#section3 .container_all .section3_4 {
+  width: 100%;
+  display: flex;
+  margin-bottom: 5%;
+}
+#section3 .container_all .section3_1 .img,
+#section3 .container_all .section3_2 .img,
+#section3 .container_all .section3_3 .img,
+#section3 .container_all .section3_4 .img {
+  width: 50%;
+}
+#section3 .container_all .section3_1 .img img,
+#section3 .container_all .section3_2 .img img,
+#section3 .container_all .section3_3 .img img,
+#section3 .container_all .section3_4 .img img {
+  width: 100%;
+}
+#section3 .container_all .section3_1 .text,
+#section3 .container_all .section3_2 .text,
+#section3 .container_all .section3_3 .text,
+#section3 .container_all .section3_4 .text {
+  width: 50%;
+  display: flex;
+}
+#section3 .container_all .section3_1 .text div,
+#section3 .container_all .section3_2 .text div,
+#section3 .container_all .section3_3 .text div,
+#section3 .container_all .section3_4 .text div {
+  width: 40%;
+}
+#section3 .container_all .section3_1 .text div h4,
+#section3 .container_all .section3_2 .text div h4,
+#section3 .container_all .section3_3 .text div h4,
+#section3 .container_all .section3_4 .text div h4 {
+  margin: 5% 0 35%;
+}
+#section3 .container_all .section3_1 .text div p,
+#section3 .container_all .section3_2 .text div p,
+#section3 .container_all .section3_3 .text div p,
+#section3 .container_all .section3_4 .text div p {
+  line-height: 1.5;
+  margin-bottom: 25%;
+}
+#section3 .container_all .section3_1 .text div a,
+#section3 .container_all .section3_2 .text div a,
+#section3 .container_all .section3_3 .text div a,
+#section3 .container_all .section3_4 .text div a {
+  font-size: 1.2em;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+#section3 .container_all .section3_1 .text div img,
+#section3 .container_all .section3_2 .text div img,
+#section3 .container_all .section3_3 .text div img,
+#section3 .container_all .section3_4 .text div img {
+  margin-top: 15%;
+  max-height: 350px;
+}
+#section3 .container_all .section3_1 .right,
+#section3 .container_all .section3_2 .right,
+#section3 .container_all .section3_3 .right,
+#section3 .container_all .section3_4 .right {
+  justify-content: flex-end;
 }
 
 @media (max-width: 550px) {
@@ -249,6 +323,9 @@ header nav .hamburger-menu {
     width: 100%;
   }
 
+  #section2 {
+    padding-bottom: 0;
+  }
   #section2 .container {
     padding-bottom: 20%;
   }
@@ -275,11 +352,48 @@ header nav .hamburger-menu {
   }
   #section2 .container .image-1 img {
     width: 100%;
+    max-height: 440px;
   }
   #section2 .container._2 {
     padding-top: 20%;
   }
   #section2 .container._2 .image-1 img {
     margin-bottom: 40%;
+  }
+
+  #section3 .container_all .section3_1,
+#section3 .container_all .section3_2,
+#section3 .container_all .section3_3,
+#section3 .container_all .section3_4 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #section3 .container_all .section3_1 .img, #section3 .container_all .section3_1 .text,
+#section3 .container_all .section3_2 .img,
+#section3 .container_all .section3_2 .text,
+#section3 .container_all .section3_3 .img,
+#section3 .container_all .section3_3 .text,
+#section3 .container_all .section3_4 .img,
+#section3 .container_all .section3_4 .text {
+    width: 100%;
+  }
+  #section3 .container_all .section3_1 .text div,
+#section3 .container_all .section3_2 .text div,
+#section3 .container_all .section3_3 .text div,
+#section3 .container_all .section3_4 .text div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  #section3 .container_all .section3_1 .text div h4, #section3 .container_all .section3_1 .text div p,
+#section3 .container_all .section3_2 .text div h4,
+#section3 .container_all .section3_2 .text div p,
+#section3 .container_all .section3_3 .text div h4,
+#section3 .container_all .section3_3 .text div p,
+#section3 .container_all .section3_4 .text div h4,
+#section3 .container_all .section3_4 .text div p {
+    margin-bottom: 5%;
   }
 }

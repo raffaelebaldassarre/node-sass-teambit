@@ -17,7 +17,6 @@
         font-size: 1em;
     }
 
-
     header{
         nav{
             width: 100%;
@@ -63,6 +62,7 @@
         }
     }
     #section2{
+        padding-bottom: 0;
         .container{
             padding-bottom: 20%;
             .images-3{
@@ -84,6 +84,7 @@
             .image-1{
                 img{
                     @include container_100;
+                    max-height: 440px;
                 }
             }
         }
@@ -92,6 +93,29 @@
             .image-1{
                 img{
                     margin-bottom: 40%;
+                }
+            }
+        }
+    }
+    #section3{
+        .container_all{
+            .section3_1,
+            .section3_2,
+            .section3_3,
+            .section3_4{
+                flex-direction: column;
+                align-items: center;
+                .img,.text{
+                @include container_100;
+                }
+                .text div{
+                    @include column;
+                    @include container_100;
+                    align-items: center;
+                    text-align: center;
+                    h4,p{
+                        margin-bottom: 5%;
+                    }
                 }
             }
         }
