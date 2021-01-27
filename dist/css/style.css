@@ -12,6 +12,11 @@ h1 {
   font-size: 5em;
 }
 
+h2 {
+  font-size: 3.5em;
+  line-height: 1.5em;
+}
+
 h3 {
   font-size: 2.5em;
 }
@@ -29,6 +34,18 @@ p {
   display: flex;
   width: 80%;
   margin: auto;
+}
+
+.container_50 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container_70 {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
 }
 
 .container_all {
@@ -264,9 +281,80 @@ header nav .hamburger-menu {
   justify-content: flex-end;
 }
 
+#section4 {
+  background-color: #FFE7D2;
+  display: flex;
+  justify-content: center;
+}
+#section4 .container_70 {
+  align-items: center;
+  padding: 5% 0;
+}
+#section4 .container_70 .text, #section4 .container_70 .mission {
+  width: 50%;
+}
+#section4 .container_70 .text h2 {
+  text-align: center;
+}
+#section4 .container_70 .mission {
+  margin: 5% 0;
+}
+#section4 .container_70 .mission {
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid #2C4792;
+  padding: 3%;
+}
+#section4 .container_70 .mission .img {
+  display: flex;
+  align-items: center;
+}
+#section4 .container_70 .mission .img img {
+  margin: 10px 20px;
+}
+#section4 .container_70 .mission .founders {
+  display: flex;
+  flex-direction: column;
+}
+#section4 .container_70 .mission .founders a {
+  font-size: 1.5em;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+#section4 .container_70 .button {
+  display: flex;
+  align-items: center;
+}
+#section4 .container_70 .button button {
+  display: flex;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 5px;
+  align-items: center;
+  background-color: #2C4792;
+  padding: 5px;
+}
+#section4 .container_70 .button button img {
+  height: 25px;
+}
+#section4 .container_70 .button button h3 {
+  color: white;
+}
+#section4 .container_70 .button span {
+  font-size: 1.5em;
+  padding: 0 10px;
+}
+#section4 .container_70 > p {
+  margin-top: 3%;
+}
+
 @media (max-width: 550px) {
   h1 {
     font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
   }
 
   h3 {
@@ -395,5 +483,14 @@ header nav .hamburger-menu {
 #section3 .container_all .section3_4 .text div h4,
 #section3 .container_all .section3_4 .text div p {
     margin-bottom: 5%;
+  }
+
+  #section4 .container_70 {
+    width: 90%;
+    padding: 10% 0;
+  }
+  #section4 .container_70 .mission {
+    width: 90%;
+    margin: 10% 0;
   }
 }

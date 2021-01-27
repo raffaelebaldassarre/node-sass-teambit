@@ -107,5 +107,15 @@ let app = new Vue ({
                 img : "./dist/img/recognition.jpg"
             }
         },
+        section4 : {
+            h2 : "See Tambit for yourself. Get started in seconds",
+            mission : {
+                p :"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id rerum architecto esse fugiat consequatur voluptatum vero, perferendis veritatis dolore, pariatur eligendi quidem saepe nostrum possimus et neque. Quia inventore consequuntur pariatur ex doloribus dignissimos repellat. Accusamus, consequatur? Ratione iste dolor doloribus quam aspernatur dignissimos consequatur iure, exercitationem dolores veritatis, itaque placeat, dolorem nihil harum sint libero quisquam corporis officiis cumque illo autem cupiditate! Libero impedit alias minima perspiciatis dolore sint porro doloremque. Non quasi, numquam vero perferendis accusamus explicabo nemo iusto nesciunt. Nulla, voluptatem. Provident, veritatis. Ipsum pariatur repudiandae cum quam quisquam. Quisquam, nostrum. Libero omnis ex veritatis nisi vel."
+            },
+            img: [
+                "./dist/img/alex.png",
+                "./dist/img/bohdan.png"
+            ]
+        }
     },
 });

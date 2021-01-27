@@ -137,3 +137,62 @@
          }
     }
 }
+#section4{
+    background-color: $background-color;
+    @include flex;
+    justify-content: center;
+    .container_70{
+        align-items: center;
+        padding: 5% 0;
+        .text,.mission{
+            width: 50%;
+        }
+        .text h2{
+            text-align: center;
+        }
+        .mission{
+            margin: 5% 0;
+        }
+        .mission{
+            background-color: white;
+            border-radius: 15px;
+            border: 1px solid $buttonblue;
+            padding: 3%;
+            .img{
+                @include flex;
+                align-items: center;
+                img{
+                    margin: 10px 20px;
+                }
+            }
+            .founders{
+                @include column;
+                a{
+                    font-size: 1.5em;
+                    text-decoration-line: none;
+                }
+            }
+        }
+        .button{
+            @include flex;
+            align-items: center;
+            button{
+                @include button-header;
+                img{
+                    height: 25px;
+                }
+                h3{
+                    color: white;
+                }
+            }
+            span{
+                font-size: 1.5em;
+                padding: 0 10px;
+            }
+        }
+        >p{
+            margin-top: 3%;
+        }
+        
+    }
+}

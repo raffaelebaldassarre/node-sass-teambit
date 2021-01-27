@@ -141,6 +141,35 @@
                     </div>
                 </div>
             </section>
+            <section id="section4">
+                <div class="container_70">
+                    <div class="text">
+                        <h2>{{section4.h2}}</h2>
+                    </div>
+                    <div class="mission">
+                        <p>{{section4.mission.p}}</p>
+                        <div class="img">
+                            <img  v-for="img in section4.img" :src="img" alt="">
+                            <div class="founders">
+                                <a href="#">Alex and Bohdan</a>
+                                <p>Co-Founders at Teambit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button>
+                            <img :src="section1.text.button1.img" alt="">
+                            <h3>{{section1.text.button1.text}}</h3>
+                        </button>
+                        <span>or</span>
+                        <button>
+                            <img :src="section1.text.button2.img" alt="">
+                            <h3>{{section1.text.button2.text}}</h3>
+                        </button>
+                    </div>
+                    <p v-html="section1.text.p"></p>
+                </div>
+            </section>
         </main>
         <footer>
     
