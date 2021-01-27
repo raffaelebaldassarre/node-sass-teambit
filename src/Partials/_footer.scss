@@ -1,0 +1,29 @@
+footer{
+    .container{
+        .motto{
+            width: 30%;
+            margin-top: 50px;
+            @include flex;
+            p{
+                width: 50%;
+            }
+            img{
+                height: 50px;
+                margin-right: 20px;
+            }
+        }
+        .container_70{
+            flex-direction: row;
+            .link{
+                width: 70%;
+                @include column;
+                justify-content: space-around;
+                margin-top: 50px;
+                ul{
+                    font-size: 2em;
+                    list-style: none;
+                }
+            }
+        }
+    }
+}

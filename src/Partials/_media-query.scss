@@ -134,4 +134,27 @@
             }
         }
     }
+    footer{
+        .container{
+            flex-direction: column;
+            .motto{
+            @include container_100;
+            justify-content: center;
+                img{
+                    height: 100px;
+                }
+                p{
+                    @include container_100;
+                    font-size: 1.5em;
+                }
+            }
+            .container_70{
+                @include container_100;
+                flex-wrap: wrap;
+                .link{
+                    width: 33%;
+                }
+            }
+        }
+    }
 }
