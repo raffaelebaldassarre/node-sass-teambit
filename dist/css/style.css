@@ -526,6 +526,7 @@ footer .container .container_70 .link ul {
 #section3 .container_all .section3_2 .text div .img,
 #section3 .container_all .section3_3 .text div .img,
 #section3 .container_all .section3_4 .text div .img {
+    width: 100%;
     max-width: 500px;
   }
   #section3 .container_all .section3_1 .right div,
