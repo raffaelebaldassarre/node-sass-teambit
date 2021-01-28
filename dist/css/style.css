@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  min-width: 550px;
+}
+
 body {
   color: #58402C;
 }
@@ -385,7 +389,7 @@ footer .container .container_70 .link ul {
   }
 
   h3 {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
 
   h4 {
@@ -510,6 +514,13 @@ footer .container .container_70 .link ul {
 #section3 .container_all .section3_4 .text div h4,
 #section3 .container_all .section3_4 .text div p {
     margin-bottom: 5%;
+  }
+  #section3 .container_all .section3_1 .text div img,
+#section3 .container_all .section3_2 .text div img,
+#section3 .container_all .section3_3 .text div img,
+#section3 .container_all .section3_4 .text div img {
+    max-width: 500px;
+    height: 100%;
   }
 
   #section4 .container_70 {
