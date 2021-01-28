@@ -114,6 +114,12 @@
                 @include flex;
                 div{
                     width: 40%;
+                    .img{
+                        width: 500px;
+                        img{
+                            margin-top: 15%;
+                        }
+                    }
                     h4{
                         margin: 5% 0 35%;
                     }
@@ -125,14 +131,14 @@
                         font-size: 1.2em;
                         text-decoration-line: none;
                     }
-                    img{
-                        margin-top: 15%;
-                        max-height: 350px;
-                    }
+
                 }
             }
             .right{
                 justify-content: flex-end;
+                div{
+                    margin-right: 20%;
+                }
             }
          }
     }

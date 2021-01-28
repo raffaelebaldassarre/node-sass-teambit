@@ -246,6 +246,18 @@ header nav .hamburger-menu {
 #section3 .container_all .section3_4 .text div {
   width: 40%;
 }
+#section3 .container_all .section3_1 .text div .img,
+#section3 .container_all .section3_2 .text div .img,
+#section3 .container_all .section3_3 .text div .img,
+#section3 .container_all .section3_4 .text div .img {
+  width: 500px;
+}
+#section3 .container_all .section3_1 .text div .img img,
+#section3 .container_all .section3_2 .text div .img img,
+#section3 .container_all .section3_3 .text div .img img,
+#section3 .container_all .section3_4 .text div .img img {
+  margin-top: 15%;
+}
 #section3 .container_all .section3_1 .text div h4,
 #section3 .container_all .section3_2 .text div h4,
 #section3 .container_all .section3_3 .text div h4,
@@ -267,18 +279,17 @@ header nav .hamburger-menu {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
-#section3 .container_all .section3_1 .text div img,
-#section3 .container_all .section3_2 .text div img,
-#section3 .container_all .section3_3 .text div img,
-#section3 .container_all .section3_4 .text div img {
-  margin-top: 15%;
-  max-height: 350px;
-}
 #section3 .container_all .section3_1 .right,
 #section3 .container_all .section3_2 .right,
 #section3 .container_all .section3_3 .right,
 #section3 .container_all .section3_4 .right {
   justify-content: flex-end;
+}
+#section3 .container_all .section3_1 .right div,
+#section3 .container_all .section3_2 .right div,
+#section3 .container_all .section3_3 .right div,
+#section3 .container_all .section3_4 .right div {
+  margin-right: 20%;
 }
 
 #section4 {
@@ -511,12 +522,17 @@ footer .container .container_70 .link ul {
 #section3 .container_all .section3_4 .text div p {
     margin-bottom: 5%;
   }
-  #section3 .container_all .section3_1 .text div img,
-#section3 .container_all .section3_2 .text div img,
-#section3 .container_all .section3_3 .text div img,
-#section3 .container_all .section3_4 .text div img {
+  #section3 .container_all .section3_1 .text div .img,
+#section3 .container_all .section3_2 .text div .img,
+#section3 .container_all .section3_3 .text div .img,
+#section3 .container_all .section3_4 .text div .img {
     max-width: 500px;
-    height: 100%;
+  }
+  #section3 .container_all .section3_1 .right div,
+#section3 .container_all .section3_2 .right div,
+#section3 .container_all .section3_3 .right div,
+#section3 .container_all .section3_4 .right div {
+    margin-right: 0;
   }
 
   #section4 .container_70 {

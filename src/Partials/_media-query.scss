@@ -120,9 +120,13 @@
                     h4,p{
                         margin-bottom: 5%;
                     }
-                    img{
+                    .img{
                         max-width: 500px;
-                        height: 100%;
+                    }
+                }
+                .right{
+                    div{
+                        margin-right: 0;
                     }
                 }
             }
